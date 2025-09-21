@@ -16,12 +16,12 @@ export default () => {
     const material = new THREE.MeshBasicMaterial( {color: 0x00ffff, transparent: true, opacity: 0.5} );
     const plane = new THREE.Mesh( geometry, material );
     anchor.group.add(plane);
-
+    
     mindarThree.start();
     renderer.setAnimationLoop(() => {
       renderer.render(scene, camera);
     });
-
+    
     return () => {
       renderer.setAnimationLoop(null);
       mindarThree.stop();
