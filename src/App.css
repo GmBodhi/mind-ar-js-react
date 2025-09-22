@@ -7,6 +7,28 @@
   z-index: 1000;
 }
 
+/* Style the MindAR video element */
+video {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover;
+  background: #000;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 0;
+}
+
+/* Style the MindAR canvas */
+canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 100 !important;
+}
+
 .container {
   margin: 20px auto;
   position: relative;
