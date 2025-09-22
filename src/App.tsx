@@ -8,8 +8,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Example React component with <a href="https://github.com/hiukim/mind-ar-js" target="_blank">MindAR</a></h1>
-
         <div className="container">
           <MindARThreeViewer />
         </div>
