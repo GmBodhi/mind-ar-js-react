@@ -12,7 +12,7 @@ export default () => {
       imageTargetSrc: "/targets.mind",
     });
     const { renderer, scene, camera } = mindarThree;
-    for (let i = 0; i < 69; i++) {
+    for (let i = 0; i < 75; i++) {
       const anchor = mindarThree.addAnchor(0);
       const geometry = new THREE.PlaneGeometry(1, 0.55);
       const material = new THREE.MeshBasicMaterial({
