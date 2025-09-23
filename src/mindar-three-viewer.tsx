@@ -9,19 +9,20 @@ export default () => {
     const mindarThree = new MindARThree({
       container: containerRef.current,
       maxTrack: 1,
-      imageTargetSrc:
-        "/targets.mind",
+      imageTargetSrc: "/targets.mind",
     });
     const { renderer, scene, camera } = mindarThree;
-    const anchor = mindarThree.addAnchor(0);
-    const geometry = new THREE.PlaneGeometry(1, 0.55);
-    const material = new THREE.MeshBasicMaterial({
-      color: 0x00ffff,
-      transparent: true,
-      opacity: 0.5,
-    });
-    const plane = new THREE.Mesh(geometry, material);
-    anchor.group.add(plane);
+    for (let i = 0; i < 69; i++) {
+      const anchor = mindarThree.addAnchor(0);
+      const geometry = new THREE.PlaneGeometry(1, 0.55);
+      const material = new THREE.MeshBasicMaterial({
+        color: 0x00ffff,
+        transparent: true,
+        opacity: 0.5,
+      });
+      const plane = new THREE.Mesh(geometry, material);
+      anchor.group.add(plane);
+    }
 
     mindarThree.start();
     renderer.setAnimationLoop(() => {
