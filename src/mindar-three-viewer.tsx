@@ -9,7 +9,7 @@ export default () => {
     const mindarThree = new MindARThree({
       container: containerRef.current,
       maxTrack: 1,
-      imageTargetSrc: "/targets.mind",
+      imageTargetSrc: "/data/targets.mind",
     });
     const { renderer, scene, camera } = mindarThree;
     for (let i = 0; i < 75; i++) {
